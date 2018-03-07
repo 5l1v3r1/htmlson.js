@@ -7,11 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build": "webpack"
   },
-  "dependencies": {
-    "jquery": "^3.0"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adalenv/htmlson.js.git"
@@ -25,10 +24,19 @@
     "htmlson.js",
     "table"
   ],
-  "author": "Adalen Vladi,Redjan Ymeraj",
+  "author": "Adalen Vladi,Redjan Ymeraj,Philipp Rost",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adalenv/htmlson.js/issues"
   },
-  "homepage": "https://adalenv.github.io/htmlson.js"
+  "homepage": "https://adalenv.github.io/htmlson.js",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.0-beta.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.2",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
+  }
 }
